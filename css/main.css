@@ -110,7 +110,9 @@
    
    h1 {
       color: #152A3E;
-      font-family: 'Alike', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-style: normal;
       font-size: 1.75rem;
       line-height: 1.5;
       width: 100%
@@ -118,11 +120,12 @@
 
    h2 {
       color: #152A3E;
-      font-family: 'Alike', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-style: normal;
       font-size: 1.25rem;
       line-height: 1.5;
       width: 100%;
-      font-weight: 400;
    }
 
    h3 {
@@ -156,7 +159,7 @@
    h4,
    h5,
    h6 {
-      font-family: 'Alike', serif;
+      font-family: 'Montserrat', sans-serif;
       line-height: 1.5;
       width: 100%
    }
