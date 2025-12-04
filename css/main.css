@@ -314,9 +314,13 @@ header nav ul li {
 
 nav #contact-link {
    background-color:  #E9B14C;
-   padding: 10px 10px;
+   padding: 10px;
    border-radius: 30px;
 }
+
+  nav #contact-link:hover {
+    background-color: #F8D697;
+  }
 
 nav ul {
    display: flex;
