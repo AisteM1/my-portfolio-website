@@ -91,7 +91,7 @@
    body {
       font-size: 1em;
       font-family: 'Open Sans', sans-serif; 
-      color: #453E4F;
+      color: #152A3E;
       background-color: white;
    /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
    }
@@ -104,12 +104,12 @@
    }
 
    a {
-      color: #453E4F;
+      color: #152A3E;
       text-decoration: none;
    }
    
    h1 {
-      color: #453E4F;
+      color: #152A3E;
       font-family: 'Alike', serif;
       font-size: 1.75rem;
       line-height: 1.5;
@@ -117,7 +117,7 @@
    }
 
    h2 {
-      color: #453E4F;
+      color: #152A3E;
       font-family: 'Alike', serif;
       font-size: 1.25rem;
       line-height: 1.5;
@@ -142,7 +142,7 @@
    .tool-wrapper p {
       text-transform: uppercase;
       font-size: 1.125rem;
-      color:  #453E4F;
+      color:  #152A3E;
    }
 
 
@@ -302,7 +302,7 @@ figure {
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-   background-color:  #ffe8d6;
+   background-color: #F7E8E8;
 }
 
 header nav ul li {
@@ -313,7 +313,7 @@ header nav ul li {
 }
 
 nav #contact-link {
-   background-color:  #F19494;
+   background-color:  #E9B14C;
    padding: 10px 10px;
    border-radius: 30px;
 }
@@ -372,19 +372,19 @@ header h2 {
 }
 
 .project-link {
-   background-color: #453E4F;
+   background-color: #E9B14C;
    padding: .75rem 3.75rem;
    border-radius: 30px;
-   color: #FFFFFF;
+   color: #152A3E;
 }
 
 .project-link:hover {
-   background-color: #CAC4D1;
-   color: #453E4F;
+   background-color: #F8D697;
+   color: #152A3E;
 }
 
 #skills {
-   background-color: #FFE8D6;
+   background-color: #F7E8E8;
 }
 
 #skills h4 {
@@ -394,7 +394,7 @@ header h2 {
 
 .language-wrapper p,
 .tool-wrapper p {
-   background-color: #F19494;
+   background-color: #E9B14C;
    padding: 15px 0;
    margin: 20px 0;
 }
@@ -415,12 +415,12 @@ header h2 {
 #about h3,
 #about h4,
 #about p {
-   color: #4a4f3e;
+   color: #152A3E;
 }
 
 /* -------------------- Base Header Styles -------------------- */
 footer {
-   background-color: #FFE8D6;
+   background-color: #F7E8E8;
 }
 
 footer .contact-wrapper {
@@ -463,7 +463,7 @@ footer .social-icons li {
 
 footer .social-icons li i {
    font-size: 1.875rem;
-   color:  #453e4f;
+   color:  #152A3E;
 }
 
 
