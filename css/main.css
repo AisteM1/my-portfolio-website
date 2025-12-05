@@ -21,9 +21,6 @@
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
  * Customize the background color to match your design.
  */
 
@@ -143,12 +140,9 @@
    .project-link,
    .language-wrapper p,
    .tool-wrapper p {
-      text-transform: uppercase;
       font-size: 1.125rem;
       color:  #152A3E;
    }
-
-
 
    .about-info h4,
    .contact-title {
@@ -380,6 +374,7 @@ header h2 {
 
 .project-link {
    background-color: #E9B14C;
+   text-transform: uppercase;
    padding: .75rem 3.75rem;
    border-radius: 30px;
    color: #152A3E;
@@ -443,6 +438,7 @@ footer .contact-info {
 
 footer h4 {
    width: 100%;
+   font-size: 1.5rem;
 }
 
 footer .follow-section {
@@ -498,7 +494,7 @@ footer .social-icons li i {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
- .sr-only {
+ .visually-hidden {
    border: 0;
    clip: rect(0, 0, 0, 0);
    height: 1px;
@@ -517,8 +513,8 @@ footer .social-icons li i {
  * https://www.drupal.org/node/897638
  */
 
- .sr-only.focusable:active,
- .sr-only.focusable:focus {
+ .visually-hidden.focusable:active,
+ .visually-hidden.focusable:focus {
    clip: auto;
    height: auto;
    margin: 0;
@@ -577,8 +573,13 @@ footer .social-icons li i {
    }
 
    h2 {
-      font-size: 1.5rem;
+      font-size: 80px;
    }
+
+  h2, 
+  h5 {
+    font-size: 1.5rem;
+  }
 
    h3 {
       font-size: 2rem;
@@ -586,14 +587,6 @@ footer .social-icons li i {
 
    h4 {
       font-size: 1.25rem;
-   }
-
-   h5 {
-      font-size: 1.5rem;
-   }
-
-   header nav ul li {
-      font-size: 1rem;
    }
 
    /* element margins */
@@ -616,20 +609,8 @@ footer .social-icons li i {
    padding-bottom: 80px 0;
  }
 
-  footer {
-   padding: 140px 0;
- }
-
  #about {
    padding: 80px 0;
- }
-
- footer {
-   padding-bottom: 80px;
- }
-
- h2 {
-   margin-top: 80px;
  }
 
  .portfolio-header {
@@ -642,14 +623,6 @@ footer .social-icons li i {
 
  .project-link {
    margin: 40px 0 60px 0;
- }
-
- #skills {
-   padding-top: 80px;
- }
-
- .skills-header {
-   margin-bottom: 40px;
  }
 
  #skills h4 {
@@ -704,8 +677,8 @@ header nav ul {
 
 .home-title {
    display: flex;
-   flex-flow: row wrap;
    justify-content: center;
+   flex-flow: row wrap;
 }
 
 .home-title h2 {
@@ -732,7 +705,7 @@ header nav ul {
    justify-content: space-evenly;
    width: 100%;
    flex-flow: row wrap;
-   text-transform: uppercase;
+ 
 }
 
 .skill,
@@ -750,7 +723,7 @@ header nav ul {
 .about-content-wrapper {
    display: flex;
    justify-content: center;
-   flex-flow: row-wrap;
+   flex-flow: row wrap;
 }
 
 #about figure {
@@ -774,8 +747,8 @@ header nav ul {
  footer ul {
    display: flex;
    justify-content: space-between;
+    flex-direction: row;
    align-items: center;
-   flex-direction: row;
    width: 100%;
  }
 
@@ -865,6 +838,10 @@ nav {
    margin-bottom: 80px;
 }
 
+h2 {
+   margin: 40px 0 0 0;
+}
+
 #work {
    padding-top: 80px;
 }
@@ -876,14 +853,6 @@ nav {
 #about {
    padding-top: 80px;
    padding-bottom: 80px;
-}
-
-footer {
-   padding: 140px 0 140px 0;
-}
-
-h2 {
-   margin: 40px 0 0 0;
 }
 
 .portfolio-header {
@@ -922,8 +891,12 @@ h2 {
    margin: 0 0 30px 0;
 }
 
+footer {
+   padding: 140px 0;
+}
+
 .contact-info {
-   margin: 80px 0 80px 0;
+   margin: 80px 0;
 }
 
 .contact-title {
@@ -995,13 +968,6 @@ h2 {
 
    }
 
-   
-   @media only screen and (min-width: 35em) {
-   /* Style adjustments for viewports that meet the condition */
-   }
-
-
-
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
@@ -1058,15 +1024,7 @@ h2 {
    border: 1px solid #999;
    page-break-inside: avoid;
   }
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-
-   thead {
-      display: table-header-group;
-   }
-
+  
 tr,
 img {
    page-break-inside: avoid;
