@@ -699,7 +699,7 @@ header nav ul {
    width: 95%;
 }
 
-.language-wrapper
+.language-wrapper,
 .tool-wrapper {
    display: flex;
    justify-content: space-evenly;
