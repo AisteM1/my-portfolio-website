@@ -24,7 +24,7 @@
  * Customize the background color to match your design.
  */
 
- ::-moz-selction {
+ ::-moz-selection {
    background: #b3d4fc;
    text-shadow: none;
  }
@@ -197,7 +197,8 @@
    }
 
    #work p,
-   #about p {
+   #about p
+   {
        width: 100%;
        text-align: left;
    }
@@ -411,7 +412,8 @@ header h2 {
 }
 
 #profile-image {
-   width: 90%;
+   display: block;
+   margin: 0 auto;
 }
 
 #about h3,
@@ -727,7 +729,8 @@ header nav ul {
 }
 
 #about figure {
-   width: 60%;
+   width: 30%;
+   margin: 0 auto;
 }
 
 .about-info h4 {
