@@ -31,10 +31,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      @media (prefers-reduced-motion: no-preference) {
+        html {
+          scroll-behavior: smooth;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <div class="content-wrapper">
         <nav>
           <ul>
@@ -300,7 +308,11 @@
         <div class="contact-wrapper">
           <div class="contact-info">
             <h5 class="contact-title">Hire me</h5>
-            <p>aiste.miskinis@gmail.com</p>
+            <p>
+              <a href="mailto:aiste.miskinis@gmail.com"
+                >aiste.miskinis@gmail.com</a
+              >
+            </p>
           </div>
           <div class="contact-info follow-section">
             <h5 class="contact-title">Follow me</h5>

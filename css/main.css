@@ -669,8 +669,9 @@ footer .social-icons li i {
   header nav ul {
     /* keep if using hamburger menu */
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    gap: 32px;
+    justify-content: flex-end;
+    width: auto;
   }
 
   .home-title {
@@ -901,12 +902,17 @@ footer .social-icons li i {
 
   /* header */
   header .content-wrapper {
-    justify-content: space-between;
+    max-width: none;
+    width: 100%;
+    padding: 0 3rem;
   }
 
   header nav {
+    margin-left: auto;
+    width: auto;
+    padding-right: 2.5rem;
+    display: flex;
     justify-content: flex-end;
-    width: 45%;
   }
 
   nav ul li a {
