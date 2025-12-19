@@ -901,7 +901,7 @@ footer .social-icons li i {
 
   /* header */
   header .content-wrapper {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   header nav {
@@ -922,7 +922,9 @@ footer .social-icons li i {
   }
 
   .home-title {
-    max-width: 95%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
 
   .home-title h2 {
